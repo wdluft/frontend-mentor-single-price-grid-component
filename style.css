@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  --cyan: hsl(179, 62%, 43%);
+  --yellow: hsl(71, 73%, 54%);
+  --lightGrey: hsl(204, 43%, 93%);
+  --blueGrey: hsl(218, 22%, 67%);
+  --white: hsl(69, 69%, 100%);
+
+  --bgColor: var(--lightGrey);
+
+  --bodyTextSize: 1rem;
+
+  --font: 'Karla', sans-serif;
+
+  font-family: var(--font);
+  background-color: var(--bgColor);
+}
+
+main {
+  padding: 4.5rem 2rem 0;
+}
+
+h1 {
+  font-size: 1.25rem;
+  line-height: 1.15;
+  font-weight: bold;
+  color: var(--cyan);
+  padding-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.22px;
+}
+
+p {
+  --textColor: var(--blueGrey);
+  font-size: 0.875rem;
+  line-height: 1.625rem;
+  color: var(--textColor);
+  letter-spacing: -0.2px;
+}
+
+button {
+  background-color: var(--yellow);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 5px;
+}
+
+section {
+  padding: 1.75rem 1.5rem 2rem;
+}
+
+.description {
+  --bgColor: var(--white);
+  background-color: var(--bgColor);
+  border-radius: 5px 5px 0 0;
+}
+
+.description h2 {
+  color: var(--yellow);
+  padding-bottom: 1rem;
+  font-size: 0.9375rem;
+}
+
+.price-box {
+  --bgColor: var(--cyan);
+  background-color: var(--bgColor);
+  padding-bottom: 1.5rem;
+}
+
+.price-box h2 {
+  color: var(--white);
+  padding-bottom: 1.125rem;
+}
+
+.price-box p {
+  --textColor: var(--white);
+  font-size: 1rem;
+}
+
+.price-box .pricing {
+  --textColor: hsla(0, 0%, 100%, 50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 0.25rem;
+}
+
+.price-box .pricing .price {
+  color: var(--white);
+  font-size: 2rem;
+  line-height: 2.3125rem;
+  font-weight: bold;
+  padding-right: 0.75rem;
+}
+
+.pricing-description {
+  padding-bottom: 1.625rem;
+}
+
+.about {
+  --bgColor: hsla(179, 62%, 43%, 80%);
+  background-color: var(--bgColor);
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.about h2 {
+  color: var(--white);
+  padding-bottom: 1rem;
+}
+
+.about p {
+  --textColor: hsla(0, 0%, 100%, 75%);
+  line-height: 1.25rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 10%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
