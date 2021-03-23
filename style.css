@@ -61,6 +61,18 @@ button {
   padding: 1rem;
   width: 100%;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.0973);
+}
+
+button:hover {
+  background-color: hsl(71, 73%, 48%);
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(2px);
 }
 
 section {
@@ -139,4 +151,68 @@ section {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 40rem) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10.25rem 2rem 2rem;
+    margin: 0 auto;
+    max-width: 43.75rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.3px;
+  }
+
+  h2 {
+    font-size: 1.125rem;
+    line-height: 1.35rem;
+    padding-bottom: 0.75rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+
+  section {
+    padding: 2.5rem;
+  }
+
+  .description {
+    grid-column: 1 / -1;
+  }
+
+  .description h2 {
+    font-size: 1.125rem;
+    line-height: 1.35rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .description p {
+    letter-spacing: -0.15px;
+  }
+
+  .price-box {
+    padding-bottom: 2.5rem;
+    border-radius: 0 0 0 5px;
+  }
+
+  .about {
+    padding: 2.5rem;
+    border-radius: 0 0 5px 0;
+  }
+
+  .about h2 {
+    padding-bottom: 1.125rem;
+  }
+
+  .about p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
